@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacyverklaring - BRAVEICO PrepApp</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; background: #f7f9fc; color: #1f2937; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    .card { background: #fff; border: 1px solid #dbe3ee; border-radius: 14px; padding: 28px; box-shadow: 0 4px 18px rgba(0,0,0,0.04); }
+    h1, h2 { color: #0f2d4a; }
+    h1 { margin-top: 0; }
+    a { color: #0b5cab; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .muted { color: #6b7280; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Privacyverklaring - BRAVEICO PrepApp</h1>
+      <p class="muted">Laatst bijgewerkt: 11 april 2026</p>
+
+      <p>BRAVEICO PrepApp is een app van BRAVEICO.</p>
+
+      <h2>Contact</h2>
+      <p>
+        BRAVEICO<br>
+        E-mail: info@braveico.nl
+        Website: www.braveico.nl
+      </p>
+
+      <h2>1. Doel van de app</h2>
+      <p>
+        BRAVEICO PrepApp helpt gebruikers bij praktische voorbereiding op noodsituaties
+        en verstoringen, zoals uitval van voorzieningen, tijdelijke ontregeling en
+        zelfredzaamheid in het huishouden.
+      </p>
+
+      <h2>2. Welke gegevens worden verwerkt</h2>
+      <p>De app gebruikt en bewaart waar nodig lokaal gegevens zoals:</p>
+      <ul>
+        <li>ingevoerde profielgegevens</li>
+        <li>inventarisatiegegevens</li>
+        <li>voorraadinformatie</li>
+        <li>gekozen scenario's</li>
+        <li>rapportagegegevens</li>
+      </ul>
+
+      <h2>3. Lokale opslag</h2>
+      <p>
+        Gegevens kunnen lokaal worden opgeslagen op het toestel of in de browser van de gebruiker,
+        zodat de app kan functioneren en eerder ingevoerde informatie bewaard blijft.
+      </p>
+
+      <h2>4. Geen verkoop van persoonsgegevens</h2>
+      <p>BRAVEICO verkoopt geen persoonsgegevens aan derden.</p>
+
+      <h2>5. Externe diensten</h2>
+      <p>
+        Sommige functies, zoals AI-advies of PDF-export, kunnen gebruikmaken van externe
+        technische diensten of netwerkverbindingen.
+      </p>
+
+      <h2>6. Delen van gegevens</h2>
+      <p>
+        BRAVEICO deelt gegevens niet met derden, behalve als dit technisch noodzakelijk is
+        voor een appfunctie of wettelijk verplicht is.
+      </p>
+
+      <h2>7. Beveiliging</h2>
+      <p>
+        BRAVEICO neemt redelijke maatregelen om de app en gegevensverwerking zorgvuldig vorm te geven.
+      </p>
+
+      <h2>8. Gegevens verwijderen</h2>
+      <ul>
+        <li>appgegevens op het toestel wissen</li>
+        <li>de app verwijderen</li>
+        <li>browsergegevens wissen bij gebruik van de webversie</li>
+      </ul>
+
+      <h2>9. Rechten en vragen</h2>
+      <p>
+        Vragen over privacy kunnen worden gestuurd naar:
+        <a href="mailto:jouw@email.nl">jouw@email.nl</a>
+      </p>
+
+      <h2>10. Wijzigingen</h2>
+      <p>BRAVEICO kan deze privacyverklaring aanpassen. De meest actuele versie staat op deze pagina.</p>
+    </div>
+  </div>
+</body>
+</html>

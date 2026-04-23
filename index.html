@@ -29,6 +29,10 @@
     }
     h1 {
       margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      margin-top: 2rem;
     }
     a {
       color: #0b5cab;
@@ -50,210 +54,815 @@
       font-family: Consolas, monospace;
       font-size: 0.95em;
     }
+    .lang-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+    .lang-switcher-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #0f2d4a;
+      margin-right: 4px;
+    }
+    .lang-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border: 1px solid #dbe3ee;
+      border-radius: 999px;
+      background: #f8fbff;
+      color: #0b5cab;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .lang-link.is-active {
+      background: #0b5cab;
+      border-color: #0b5cab;
+      color: #ffffff;
+    }
+    .intro p,
+    .section p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .section:last-child p:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 20px 14px;
+      }
+      .card {
+        padding: 20px;
+      }
+      .lang-switcher {
+        gap: 8px;
+      }
+      .lang-link {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
-      <h1>Privacyverklaring - BRAVEICO PrepApp</h1>
-      <p class="muted">Laatst bijgewerkt: 22 april 2026</p>
+      <nav class="lang-switcher" aria-label="Language selector">
+        <span class="lang-switcher-label" id="lang-switcher-label">Taal:</span>
+        <a class="lang-link" data-lang-link="nl" href="?lang=nl">Nederlands</a>
+        <a class="lang-link" data-lang-link="en" href="?lang=en">English</a>
+        <a class="lang-link" data-lang-link="de" href="?lang=de">Deutsch</a>
+        <a class="lang-link" data-lang-link="fr" href="?lang=fr">Français</a>
+      </nav>
 
-      <p>
-        BRAVEICO PrepApp is een app van BRAVEICO. In deze privacyverklaring lees je welke gegevens
-        bij gebruik van de app en de webversie kunnen worden verwerkt, waarom dat gebeurt en welke
-        rechten je daarbij hebt.
-      </p>
-
-      <h2>1. Wie is verantwoordelijk?</h2>
-      <p>
-        Verwerkingsverantwoordelijke voor de verwerking van persoonsgegevens in het kader van
-        BRAVEICO PrepApp is:
-      </p>
-      <p>
-        BRAVEICO<br>
-        E-mail: <a href="mailto:info@braveico.nl">info@braveico.nl</a><br>
-        Website: <a href="https://www.braveico.nl" target="_blank" rel="noreferrer">www.braveico.nl</a>
-      </p>
-
-      <h2>2. Waarvoor is de app bedoeld?</h2>
-      <p>
-        BRAVEICO PrepApp helpt gebruikers bij praktische voorbereiding op uitval, verstoring en
-        crisissituaties, zoals stroomuitval, wateruitval, communicatie-uitval, evacuatie en
-        andere situaties waarbij zelfredzaamheid in huis of rondom het huishouden belangrijk is.
-      </p>
-
-      <h2>3. Welke gegevens kunnen worden verwerkt?</h2>
-      <p>Afhankelijk van hoe je de app gebruikt, kan de app werken met gegevens zoals:</p>
-      <ul>
-        <li>huishoudgegevens, zoals samenstelling van het huishouden en woonsituatie;</li>
-        <li>inventarisatiegegevens, zoals aanwezige middelen en ingevoerde hoeveelheden;</li>
-        <li>gekozen voorbereidingsperioden, scenario's en voorkeuren;</li>
-        <li>rapportagegegevens die op basis van jouw invoer worden samengesteld;</li>
-        <li>technische gegevens die nodig zijn om de website of app te laten functioneren.</li>
-      </ul>
-      <p>
-        BRAVEICO adviseert om geen onnodige of overmatig gevoelige persoonsgegevens in vrije
-        tekstvelden in te voeren.
-      </p>
-
-      <h2>4. Hoe worden gegevens opgeslagen?</h2>
-      <p>
-        In de huidige lokale variant van BRAVEICO PrepApp worden ingevoerde gegevens in beginsel
-        lokaal opgeslagen op het apparaat of in de browser van de gebruiker. Dat betekent dat
-        gegevens normaal gesproken gekoppeld blijven aan dezelfde browser, hetzelfde apparaat of
-        dezelfde app-installatie.
-      </p>
-      <p>
-        Als je wisselt van browser, apparaat, privévenster of app-installatie, worden gegevens
-        doorgaans niet automatisch meegenomen, tenzij je daar zelf iets voor exporteert of opslaat.
-      </p>
-
-      <h2>5. Gebruikt de app een account of centrale gebruikersdatabase?</h2>
-      <p>
-        In deze versie van BRAVEICO PrepApp wordt geen centrale gebruikersdatabase gebruikt voor
-        het opslaan van jouw huishoud- en inventarisgegevens. De app werkt in deze variant
-        primair met lokale opslag.
-      </p>
-
-      <h2>6. Gebruikt de app externe AI-diensten?</h2>
-      <p>
-        In de huidige lokale variant van BRAVEICO PrepApp wordt geen externe AI-dienst gebruikt
-        voor het verwerken van gebruikersgegevens. Er is in deze variant geen centrale AI-backend
-        actief voor persoonlijke invoer.
-      </p>
-
-      <h2>7. Wanneer kunnen gegevens toch via een server worden verwerkt?</h2>
-      <p>
-        Sommige technische functies kunnen - als ze zijn ingeschakeld - gebruikmaken van een
-        server of netwerkverbinding. Dat kan bijvoorbeeld gelden voor PDF-export of een andere
-        technische hulpfunctie.
-      </p>
-      <p>
-        Als zo'n functie actief is, kunnen gegevens die nodig zijn voor die specifieke functie
-        tijdelijk technisch worden verwerkt om de gevraagde output te maken, zoals een rapport of
-        PDF-bestand. Dat gebeurt alleen voor zover dat nodig is voor die functie.
-      </p>
-
-      <h2>8. Doeleinden en grondslagen van verwerking</h2>
-      <p>BRAVEICO verwerkt gegevens alleen voor zover dat nodig is voor onder meer:</p>
-      <ul>
-        <li>het laten functioneren van de app en website;</li>
-        <li>het bewaren van lokale invoer en voorkeuren;</li>
-        <li>het genereren van analyses, overzichten en rapportages op basis van jouw invoer;</li>
-        <li>het uitvoeren van optionele technische functies, zoals PDF-export;</li>
-        <li>het beveiligen, verbeteren en beheren van de app of website.</li>
-      </ul>
-      <p>De grondslagen daarvoor kunnen zijn:</p>
-      <ul>
-        <li>jouw verzoek om een functie te gebruiken;</li>
-        <li>het gerechtvaardigd belang van BRAVEICO om de app technisch en veilig te laten werken;</li>
-        <li>naleving van een wettelijke verplichting, als die van toepassing is.</li>
-      </ul>
-
-      <h2>9. Delen met derden</h2>
-      <p>
-        BRAVEICO verkoopt geen persoonsgegevens aan derden en verstrekt geen gegevens aan derden
-        voor commerciële advertentiedoeleinden.
-      </p>
-      <p>
-        Alleen als dat technisch noodzakelijk is voor het functioneren van een specifieke
-        appfunctie, of als BRAVEICO daartoe wettelijk verplicht is, kunnen gegevens worden
-        verwerkt door een technische dienstverlener of op grond van een wettelijke verplichting.
-      </p>
-
-      <h2>10. Hosting en loggegevens</h2>
-      <p>
-        Als je de webversie gebruikt, kan de hostingpartij of webserver technische loggegevens
-        verwerken, zoals IP-adres, datum en tijdstip van bezoek, browsertype en opgevraagde
-        pagina's. Zulke gegevens zijn gebruikelijk voor beveiliging, stabiliteit en technisch
-        beheer van een website.
-      </p>
-
-      <h2>11. Cookies en vergelijkbare technieken</h2>
-      <p>
-        De app kan functionele opslagtechnieken gebruiken, zoals browseropslag of vergelijkbare
-        lokale opslag, om ingevoerde gegevens, voorkeuren en de werking van de app te bewaren.
-        Deze opslag is bedoeld om de app technisch te laten functioneren en gebruiksvriendelijk te
-        houden.
-      </p>
-
-      <h2>12. Bewaartermijnen</h2>
-      <p>
-        Gegevens die lokaal op jouw apparaat of in jouw browser worden opgeslagen, blijven
-        bewaard totdat jij deze verwijdert, overschrijft of de app- of browsergegevens wist.
-      </p>
-      <p>
-        Als een optionele serverfunctie wordt gebruikt, worden gegevens niet langer bewaard dan
-        nodig is voor het technische doel van die functie, tenzij een langere bewaartermijn
-        wettelijk verplicht is.
-      </p>
-
-      <h2>13. Demoprofielen en testgegevens</h2>
-      <p>
-        De app kan demoprofielen of voorbeeldgegevens bevatten om de werking te demonstreren.
-        Als je zo'n demoprofiel laadt, kan bestaande lokale invoer worden overschreven of vervangen.
-        Controleer daarom altijd of je werkt met jouw eigen actuele gegevens voordat je conclusies
-        trekt of een rapport genereert.
-      </p>
-
-      <h2>14. Beveiliging</h2>
-      <p>
-        BRAVEICO neemt redelijke technische en organisatorische maatregelen om de app,
-        website en gegevensverwerking zorgvuldig vorm te geven. Tegelijk kan geen enkele
-        digitale omgeving absolute veiligheid garanderen.
-      </p>
-
-      <h2>15. Jouw rechten</h2>
-      <p>
-        Als BRAVEICO persoonsgegevens van jou verwerkt, kun je - voor zover wettelijk van
-        toepassing - vragen om:
-      </p>
-      <ul>
-        <li>inzage in jouw persoonsgegevens;</li>
-        <li>correctie van onjuiste persoonsgegevens;</li>
-        <li>verwijdering van persoonsgegevens;</li>
-        <li>beperking van verwerking;</li>
-        <li>bezwaar tegen verwerking;</li>
-        <li>overdraagbaarheid van persoonsgegevens.</li>
-      </ul>
-      <p>
-        Omdat deze versie van de app grotendeels lokaal werkt, kun je veel gegevens ook zelf
-        verwijderen door de lokale app- of browsergegevens te wissen.
-      </p>
-
-      <h2>16. Gegevens verwijderen</h2>
-      <p>Je kunt lokaal opgeslagen gegevens onder meer verwijderen door:</p>
-      <ul>
-        <li>de appgegevens op het toestel te wissen;</li>
-        <li>de app te verwijderen;</li>
-        <li>browsergegevens of lokale opslag te wissen bij gebruik van de webversie;</li>
-        <li>eventuele test- of demogegevens te overschrijven met nieuwe invoer.</li>
-      </ul>
-
-      <h2>17. Vragen of klachten</h2>
-      <p>
-        Heb je vragen over privacy of over deze verklaring, neem dan contact op via
-        <a href="mailto:info@braveico.nl">info@braveico.nl</a>.
-      </p>
-      <p>
-        Je hebt daarnaast het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens
-        als je vindt dat persoonsgegevens onjuist of onzorgvuldig worden verwerkt.
-      </p>
-
-      <h2>18. Wijzigingen in deze privacyverklaring</h2>
-      <p>
-        BRAVEICO kan deze privacyverklaring aanpassen als de app, website of gegevensverwerking
-        verandert. De meest actuele versie wordt gepubliceerd op de daarvoor bestemde pagina.
-      </p>
-
-      <h2>19. Belangrijke nuance</h2>
-      <p>
-        BRAVEICO PrepApp is een hulpmiddel voor voorbereiding en zelfredzaamheid. De inhoud van de
-        app, analyses en rapportages is gebaseerd op ingevoerde gegevens en modelmatige logica.
-        Deze privacyverklaring gaat alleen over de verwerking van gegevens, niet over de inhoudelijke
-        juistheid of geschiktheid van adviezen in een specifieke noodsituatie.
-      </p>
+      <h1 id="page-title">Privacyverklaring - BRAVEICO PrepApp</h1>
+      <p class="muted" id="page-updated">Laatst bijgewerkt: 22 april 2026</p>
+      <div class="intro" id="page-intro"></div>
+      <div id="page-sections"></div>
     </div>
   </div>
+
+  <script>
+    const translations = {
+      nl: {
+        htmlLang: "nl",
+        title: "Privacyverklaring - BRAVEICO PrepApp",
+        updated: "Laatst bijgewerkt: 22 april 2026",
+        switcherLabel: "Taal:",
+        intro: [
+          "BRAVEICO PrepApp is een app van BRAVEICO. In deze privacyverklaring lees je welke gegevens bij gebruik van de app en de webversie kunnen worden verwerkt, waarom dat gebeurt en welke rechten je daarbij hebt."
+        ],
+        sections: [
+          {
+            title: "1. Wie is verantwoordelijk?",
+            blocks: [
+              { type: "p", html: "Verwerkingsverantwoordelijke voor de verwerking van persoonsgegevens in het kader van BRAVEICO PrepApp is:" },
+              { type: "p", html: "BRAVEICO<br>E-mail: <a href='mailto:info@braveico.nl'>info@braveico.nl</a><br>Website: <a href='https://www.braveico.nl' target='_blank' rel='noreferrer'>www.braveico.nl</a>" }
+            ]
+          },
+          {
+            title: "2. Waarvoor is de app bedoeld?",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp helpt gebruikers bij praktische voorbereiding op uitval, verstoring en crisissituaties, zoals stroomuitval, wateruitval, communicatie-uitval, evacuatie en andere situaties waarbij zelfredzaamheid in huis of rondom het huishouden belangrijk is." }
+            ]
+          },
+          {
+            title: "3. Welke gegevens kunnen worden verwerkt?",
+            blocks: [
+              { type: "p", html: "Afhankelijk van hoe je de app gebruikt, kan de app werken met gegevens zoals:" },
+              { type: "ul", items: [
+                "huishoudgegevens, zoals samenstelling van het huishouden en woonsituatie;",
+                "inventarisatiegegevens, zoals aanwezige middelen en ingevoerde hoeveelheden;",
+                "gekozen voorbereidingsperioden, scenario's en voorkeuren;",
+                "rapportagegegevens die op basis van jouw invoer worden samengesteld;",
+                "technische gegevens die nodig zijn om de website of app te laten functioneren."
+              ]},
+              { type: "p", html: "BRAVEICO adviseert om geen onnodige of overmatig gevoelige persoonsgegevens in vrije tekstvelden in te voeren." }
+            ]
+          },
+          {
+            title: "4. Hoe worden gegevens opgeslagen?",
+            blocks: [
+              { type: "p", html: "In de huidige lokale variant van BRAVEICO PrepApp worden ingevoerde gegevens in beginsel lokaal opgeslagen op het apparaat of in de browser van de gebruiker. Dat betekent dat gegevens normaal gesproken gekoppeld blijven aan dezelfde browser, hetzelfde apparaat of dezelfde app-installatie." },
+              { type: "p", html: "Als je wisselt van browser, apparaat, privévenster of app-installatie, worden gegevens doorgaans niet automatisch meegenomen, tenzij je daar zelf iets voor exporteert of opslaat." }
+            ]
+          },
+          {
+            title: "5. Gebruikt de app een account of centrale gebruikersdatabase?",
+            blocks: [
+              { type: "p", html: "In deze versie van BRAVEICO PrepApp wordt geen centrale gebruikersdatabase gebruikt voor het opslaan van jouw huishoud- en inventarisgegevens. De app werkt in deze variant primair met lokale opslag." }
+            ]
+          },
+          {
+            title: "6. Gebruikt de app externe AI-diensten?",
+            blocks: [
+              { type: "p", html: "In de huidige lokale variant van BRAVEICO PrepApp wordt geen externe AI-dienst gebruikt voor het verwerken van gebruikersgegevens. Er is in deze variant geen centrale AI-backend actief voor persoonlijke invoer." }
+            ]
+          },
+          {
+            title: "7. Wanneer kunnen gegevens toch via een server worden verwerkt?",
+            blocks: [
+              { type: "p", html: "Sommige technische functies kunnen - als ze zijn ingeschakeld - gebruikmaken van een server of netwerkverbinding. Dat kan bijvoorbeeld gelden voor PDF-export of een andere technische hulpfunctie." },
+              { type: "p", html: "Als zo'n functie actief is, kunnen gegevens die nodig zijn voor die specifieke functie tijdelijk technisch worden verwerkt om de gevraagde output te maken, zoals een rapport of PDF-bestand. Dat gebeurt alleen voor zover dat nodig is voor die functie." }
+            ]
+          },
+          {
+            title: "8. Doeleinden en grondslagen van verwerking",
+            blocks: [
+              { type: "p", html: "BRAVEICO verwerkt gegevens alleen voor zover dat nodig is voor onder meer:" },
+              { type: "ul", items: [
+                "het laten functioneren van de app en website;",
+                "het bewaren van lokale invoer en voorkeuren;",
+                "het genereren van analyses, overzichten en rapportages op basis van jouw invoer;",
+                "het uitvoeren van optionele technische functies, zoals PDF-export;",
+                "het beveiligen, verbeteren en beheren van de app of website."
+              ]},
+              { type: "p", html: "De grondslagen daarvoor kunnen zijn:" },
+              { type: "ul", items: [
+                "jouw verzoek om een functie te gebruiken;",
+                "het gerechtvaardigd belang van BRAVEICO om de app technisch en veilig te laten werken;",
+                "naleving van een wettelijke verplichting, als die van toepassing is."
+              ]}
+            ]
+          },
+          {
+            title: "9. Delen met derden",
+            blocks: [
+              { type: "p", html: "BRAVEICO verkoopt geen persoonsgegevens aan derden en verstrekt geen gegevens aan derden voor commerciële advertentiedoeleinden." },
+              { type: "p", html: "Alleen als dat technisch noodzakelijk is voor het functioneren van een specifieke appfunctie, of als BRAVEICO daartoe wettelijk verplicht is, kunnen gegevens worden verwerkt door een technische dienstverlener of op grond van een wettelijke verplichting." }
+            ]
+          },
+          {
+            title: "10. Hosting en loggegevens",
+            blocks: [
+              { type: "p", html: "Als je de webversie gebruikt, kan de hostingpartij of webserver technische loggegevens verwerken, zoals IP-adres, datum en tijdstip van bezoek, browsertype en opgevraagde pagina's. Zulke gegevens zijn gebruikelijk voor beveiliging, stabiliteit en technisch beheer van een website." }
+            ]
+          },
+          {
+            title: "11. Cookies en vergelijkbare technieken",
+            blocks: [
+              { type: "p", html: "De app kan functionele opslagtechnieken gebruiken, zoals browseropslag of vergelijkbare lokale opslag, om ingevoerde gegevens, voorkeuren en de werking van de app te bewaren. Deze opslag is bedoeld om de app technisch te laten functioneren en gebruiksvriendelijk te houden." }
+            ]
+          },
+          {
+            title: "12. Bewaartermijnen",
+            blocks: [
+              { type: "p", html: "Gegevens die lokaal op jouw apparaat of in jouw browser worden opgeslagen, blijven bewaard totdat jij deze verwijdert, overschrijft of de app- of browsergegevens wist." },
+              { type: "p", html: "Als een optionele serverfunctie wordt gebruikt, worden gegevens niet langer bewaard dan nodig is voor het technische doel van die functie, tenzij een langere bewaartermijn wettelijk verplicht is." }
+            ]
+          },
+          {
+            title: "13. Demoprofielen en testgegevens",
+            blocks: [
+              { type: "p", html: "De app kan demoprofielen of voorbeeldgegevens bevatten om de werking te demonstreren. Als je zo'n demoprofiel laadt, kan bestaande lokale invoer worden overschreven of vervangen. Controleer daarom altijd of je werkt met jouw eigen actuele gegevens voordat je conclusies trekt of een rapport genereert." }
+            ]
+          },
+          {
+            title: "14. Beveiliging",
+            blocks: [
+              { type: "p", html: "BRAVEICO neemt redelijke technische en organisatorische maatregelen om de app, website en gegevensverwerking zorgvuldig vorm te geven. Tegelijk kan geen enkele digitale omgeving absolute veiligheid garanderen." }
+            ]
+          },
+          {
+            title: "15. Jouw rechten",
+            blocks: [
+              { type: "p", html: "Als BRAVEICO persoonsgegevens van jou verwerkt, kun je - voor zover wettelijk van toepassing - vragen om:" },
+              { type: "ul", items: [
+                "inzage in jouw persoonsgegevens;",
+                "correctie van onjuiste persoonsgegevens;",
+                "verwijdering van persoonsgegevens;",
+                "beperking van verwerking;",
+                "bezwaar tegen verwerking;",
+                "overdraagbaarheid van persoonsgegevens."
+              ]},
+              { type: "p", html: "Omdat deze versie van de app grotendeels lokaal werkt, kun je veel gegevens ook zelf verwijderen door de lokale app- of browsergegevens te wissen." }
+            ]
+          },
+          {
+            title: "16. Gegevens verwijderen",
+            blocks: [
+              { type: "p", html: "Je kunt lokaal opgeslagen gegevens onder meer verwijderen door:" },
+              { type: "ul", items: [
+                "de appgegevens op het toestel te wissen;",
+                "de app te verwijderen;",
+                "browsergegevens of lokale opslag te wissen bij gebruik van de webversie;",
+                "eventuele test- of demogegevens te overschrijven met nieuwe invoer."
+              ]}
+            ]
+          },
+          {
+            title: "17. Vragen of klachten",
+            blocks: [
+              { type: "p", html: "Heb je vragen over privacy of over deze verklaring, neem dan contact op via <a href='mailto:info@braveico.nl'>info@braveico.nl</a>." },
+              { type: "p", html: "Je hebt daarnaast het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens als je vindt dat persoonsgegevens onjuist of onzorgvuldig worden verwerkt." }
+            ]
+          },
+          {
+            title: "18. Wijzigingen in deze privacyverklaring",
+            blocks: [
+              { type: "p", html: "BRAVEICO kan deze privacyverklaring aanpassen als de app, website of gegevensverwerking verandert. De meest actuele versie wordt gepubliceerd op de daarvoor bestemde pagina." }
+            ]
+          },
+          {
+            title: "19. Belangrijke nuance",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp is een hulpmiddel voor voorbereiding en zelfredzaamheid. De inhoud van de app, analyses en rapportages is gebaseerd op ingevoerde gegevens en modelmatige logica. Deze privacyverklaring gaat alleen over de verwerking van gegevens, niet over de inhoudelijke juistheid of geschiktheid van adviezen in een specifieke noodsituatie." }
+            ]
+          }
+        ]
+      },
+      en: {
+        htmlLang: "en",
+        title: "Privacy Policy - BRAVEICO PrepApp",
+        updated: "Last updated: April 22, 2026",
+        switcherLabel: "Language:",
+        intro: [
+          "BRAVEICO PrepApp is an app by BRAVEICO. This privacy policy explains which data may be processed when you use the app and the web version, why that happens, and which rights you have in that context."
+        ],
+        sections: [
+          {
+            title: "1. Who is responsible?",
+            blocks: [
+              { type: "p", html: "The controller for the processing of personal data in the context of BRAVEICO PrepApp is:" },
+              { type: "p", html: "BRAVEICO<br>Email: <a href='mailto:info@braveico.nl'>info@braveico.nl</a><br>Website: <a href='https://www.braveico.nl' target='_blank' rel='noreferrer'>www.braveico.nl</a>" }
+            ]
+          },
+          {
+            title: "2. What is the app intended for?",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp helps users prepare practically for outages, disruptions and crisis situations, such as power failure, water failure, communication failure, evacuation and other situations in which self-reliance at home or around the household is important." }
+            ]
+          },
+          {
+            title: "3. Which data may be processed?",
+            blocks: [
+              { type: "p", html: "Depending on how you use the app, the app may work with data such as:" },
+              { type: "ul", items: [
+                "household data, such as household composition and living situation;",
+                "inventory data, such as available supplies and entered quantities;",
+                "selected preparedness periods, scenarios and preferences;",
+                "report data compiled on the basis of your input;",
+                "technical data needed to make the website or app function."
+              ]},
+              { type: "p", html: "BRAVEICO advises users not to enter unnecessary or excessively sensitive personal data in free text fields." }
+            ]
+          },
+          {
+            title: "4. How is data stored?",
+            blocks: [
+              { type: "p", html: "In the current local variant of BRAVEICO PrepApp, entered data is in principle stored locally on the user's device or in the user's browser. This means that data will normally remain linked to the same browser, the same device or the same app installation." },
+              { type: "p", html: "If you switch browser, device, private window or app installation, data will generally not be transferred automatically unless you export or save it yourself." }
+            ]
+          },
+          {
+            title: "5. Does the app use an account or a central user database?",
+            blocks: [
+              { type: "p", html: "This version of BRAVEICO PrepApp does not use a central user database to store your household and inventory data. In this variant the app primarily works with local storage." }
+            ]
+          },
+          {
+            title: "6. Does the app use external AI services?",
+            blocks: [
+              { type: "p", html: "In the current local variant of BRAVEICO PrepApp, no external AI service is used to process user data. In this variant there is no central AI backend active for personal input." }
+            ]
+          },
+          {
+            title: "7. When can data still be processed through a server?",
+            blocks: [
+              { type: "p", html: "Some technical functions may - if enabled - use a server or network connection. This may for example apply to PDF export or another technical support function." },
+              { type: "p", html: "If such a function is active, data needed for that specific function may be processed temporarily from a technical perspective in order to produce the requested output, such as a report or PDF file. This only happens insofar as it is necessary for that function." }
+            ]
+          },
+          {
+            title: "8. Purposes and legal bases for processing",
+            blocks: [
+              { type: "p", html: "BRAVEICO only processes data insofar as necessary for, among other things:" },
+              { type: "ul", items: [
+                "making the app and website function;",
+                "storing local input and preferences;",
+                "generating analyses, overviews and reports based on your input;",
+                "performing optional technical functions such as PDF export;",
+                "securing, improving and managing the app or website."
+              ]},
+              { type: "p", html: "The legal bases for this may include:" },
+              { type: "ul", items: [
+                "your request to use a function;",
+                "BRAVEICO's legitimate interest in making the app work technically and securely;",
+                "compliance with a legal obligation, where applicable."
+              ]}
+            ]
+          },
+          {
+            title: "9. Sharing with third parties",
+            blocks: [
+              { type: "p", html: "BRAVEICO does not sell personal data to third parties and does not provide data to third parties for commercial advertising purposes." },
+              { type: "p", html: "Only if this is technically necessary for the functioning of a specific app feature, or if BRAVEICO is legally obliged to do so, data may be processed by a technical service provider or on the basis of a legal obligation." }
+            ]
+          },
+          {
+            title: "10. Hosting and log data",
+            blocks: [
+              { type: "p", html: "If you use the web version, the hosting provider or web server may process technical log data such as IP address, date and time of visit, browser type and requested pages. Such data is common for security, stability and the technical management of a website." }
+            ]
+          },
+          {
+            title: "11. Cookies and similar technologies",
+            blocks: [
+              { type: "p", html: "The app may use functional storage technologies, such as browser storage or similar local storage, to retain entered data, preferences and the functioning of the app. This storage is intended to make the app function technically and remain user-friendly." }
+            ]
+          },
+          {
+            title: "12. Retention periods",
+            blocks: [
+              { type: "p", html: "Data stored locally on your device or in your browser remains stored until you delete or overwrite it, or until you clear app or browser data." },
+              { type: "p", html: "If an optional server function is used, data is not stored for longer than necessary for the technical purpose of that function, unless a longer retention period is legally required." }
+            ]
+          },
+          {
+            title: "13. Demo profiles and test data",
+            blocks: [
+              { type: "p", html: "The app may contain demo profiles or sample data to demonstrate how it works. If you load such a demo profile, existing local input may be overwritten or replaced. Always check that you are working with your own current data before drawing conclusions or generating a report." }
+            ]
+          },
+          {
+            title: "14. Security",
+            blocks: [
+              { type: "p", html: "BRAVEICO takes reasonable technical and organisational measures to shape the app, website and data processing with due care. At the same time, no digital environment can guarantee absolute security." }
+            ]
+          },
+          {
+            title: "15. Your rights",
+            blocks: [
+              { type: "p", html: "If BRAVEICO processes your personal data, you may - insofar as legally applicable - request:" },
+              { type: "ul", items: [
+                "access to your personal data;",
+                "correction of incorrect personal data;",
+                "deletion of personal data;",
+                "restriction of processing;",
+                "objection to processing;",
+                "portability of personal data."
+              ]},
+              { type: "p", html: "Because this version of the app works largely locally, you can also delete much of the data yourself by clearing local app or browser data." }
+            ]
+          },
+          {
+            title: "16. Deleting data",
+            blocks: [
+              { type: "p", html: "You can remove locally stored data, among other ways, by:" },
+              { type: "ul", items: [
+                "clearing the app data on the device;",
+                "removing the app;",
+                "clearing browser data or local storage when using the web version;",
+                "overwriting any test or demo data with new input."
+              ]}
+            ]
+          },
+          {
+            title: "17. Questions or complaints",
+            blocks: [
+              { type: "p", html: "If you have questions about privacy or about this policy, please contact <a href='mailto:info@braveico.nl'>info@braveico.nl</a>." },
+              { type: "p", html: "You also have the right to lodge a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) if you believe that personal data is being processed incorrectly or carelessly." }
+            ]
+          },
+          {
+            title: "18. Changes to this privacy policy",
+            blocks: [
+              { type: "p", html: "BRAVEICO may amend this privacy policy if the app, website or data processing changes. The most current version will be published on the designated page." }
+            ]
+          },
+          {
+            title: "19. Important nuance",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp is a tool for preparedness and self-reliance. The content of the app, analyses and reports is based on entered data and model-based logic. This privacy policy only concerns the processing of data, not the substantive correctness or suitability of advice in a specific emergency situation." }
+            ]
+          }
+        ]
+      },
+      de: {
+        htmlLang: "de",
+        title: "Datenschutzerklärung - BRAVEICO PrepApp",
+        updated: "Zuletzt aktualisiert: 22. April 2026",
+        switcherLabel: "Sprache:",
+        intro: [
+          "BRAVEICO PrepApp ist eine App von BRAVEICO. In dieser Datenschutzerklärung erfährst du, welche Daten bei der Nutzung der App und der Webversion verarbeitet werden können, warum dies geschieht und welche Rechte du dabei hast."
+        ],
+        sections: [
+          {
+            title: "1. Wer ist verantwortlich?",
+            blocks: [
+              { type: "p", html: "Verantwortlicher für die Verarbeitung personenbezogener Daten im Rahmen von BRAVEICO PrepApp ist:" },
+              { type: "p", html: "BRAVEICO<br>E-Mail: <a href='mailto:info@braveico.nl'>info@braveico.nl</a><br>Website: <a href='https://www.braveico.nl' target='_blank' rel='noreferrer'>www.braveico.nl</a>" }
+            ]
+          },
+          {
+            title: "2. Wofür ist die App gedacht?",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp unterstützt Nutzer bei der praktischen Vorbereitung auf Ausfälle, Störungen und Krisensituationen, wie Stromausfall, Wasserausfall, Kommunikationsausfall, Evakuierung und andere Situationen, in denen Selbstständigkeit zu Hause oder rund um den Haushalt wichtig ist." }
+            ]
+          },
+          {
+            title: "3. Welche Daten können verarbeitet werden?",
+            blocks: [
+              { type: "p", html: "Je nachdem, wie du die App nutzt, kann die App mit Daten wie den folgenden arbeiten:" },
+              { type: "ul", items: [
+                "Haushaltsdaten, wie Zusammensetzung des Haushalts und Wohnsituation;",
+                "Inventardaten, wie vorhandene Mittel und eingegebene Mengen;",
+                "gewählte Vorbereitungszeiträume, Szenarien und Präferenzen;",
+                "Berichtsdaten, die auf Grundlage deiner Eingaben zusammengestellt werden;",
+                "technische Daten, die erforderlich sind, damit die Website oder App funktioniert."
+              ]},
+              { type: "p", html: "BRAVEICO empfiehlt, in freien Textfeldern keine unnötigen oder übermäßig sensiblen personenbezogenen Daten einzugeben." }
+            ]
+          },
+          {
+            title: "4. Wie werden Daten gespeichert?",
+            blocks: [
+              { type: "p", html: "In der aktuellen lokalen Variante von BRAVEICO PrepApp werden eingegebene Daten grundsätzlich lokal auf dem Gerät oder im Browser des Nutzers gespeichert. Das bedeutet, dass Daten normalerweise mit demselben Browser, demselben Gerät oder derselben App-Installation verknüpft bleiben." },
+              { type: "p", html: "Wenn du den Browser, das Gerät, ein privates Fenster oder die App-Installation wechselst, werden Daten in der Regel nicht automatisch übernommen, es sei denn, du exportierst oder speicherst sie selbst." }
+            ]
+          },
+          {
+            title: "5. Verwendet die App ein Konto oder eine zentrale Nutzerdatenbank?",
+            blocks: [
+              { type: "p", html: "In dieser Version von BRAVEICO PrepApp wird keine zentrale Nutzerdatenbank verwendet, um deine Haushalts- und Inventardaten zu speichern. Die App arbeitet in dieser Variante in erster Linie mit lokaler Speicherung." }
+            ]
+          },
+          {
+            title: "6. Verwendet die App externe KI-Dienste?",
+            blocks: [
+              { type: "p", html: "In der aktuellen lokalen Variante von BRAVEICO PrepApp wird kein externer KI-Dienst zur Verarbeitung von Nutzerdaten eingesetzt. In dieser Variante ist kein zentrales KI-Backend für persönliche Eingaben aktiv." }
+            ]
+          },
+          {
+            title: "7. Wann können Daten dennoch über einen Server verarbeitet werden?",
+            blocks: [
+              { type: "p", html: "Einige technische Funktionen können - wenn sie aktiviert sind - einen Server oder eine Netzwerkverbindung verwenden. Das kann zum Beispiel für den PDF-Export oder eine andere technische Hilfsfunktion gelten." },
+              { type: "p", html: "Wenn eine solche Funktion aktiv ist, können die für diese konkrete Funktion erforderlichen Daten vorübergehend technisch verarbeitet werden, um die gewünschte Ausgabe zu erstellen, zum Beispiel einen Bericht oder eine PDF-Datei. Dies geschieht nur, soweit es für diese Funktion erforderlich ist." }
+            ]
+          },
+          {
+            title: "8. Zwecke und Rechtsgrundlagen der Verarbeitung",
+            blocks: [
+              { type: "p", html: "BRAVEICO verarbeitet Daten nur, soweit dies unter anderem erforderlich ist für:" },
+              { type: "ul", items: [
+                "das Funktionieren der App und Website;",
+                "das Speichern lokaler Eingaben und Präferenzen;",
+                "die Erstellung von Analysen, Übersichten und Berichten auf Grundlage deiner Eingaben;",
+                "die Ausführung optionaler technischer Funktionen, wie PDF-Export;",
+                "die Sicherung, Verbesserung und Verwaltung der App oder Website."
+              ]},
+              { type: "p", html: "Als Rechtsgrundlagen kommen in Betracht:" },
+              { type: "ul", items: [
+                "dein Wunsch, eine Funktion zu nutzen;",
+                "das berechtigte Interesse von BRAVEICO, die App technisch und sicher funktionsfähig zu halten;",
+                "die Erfüllung einer gesetzlichen Verpflichtung, soweit diese gilt."
+              ]}
+            ]
+          },
+          {
+            title: "9. Weitergabe an Dritte",
+            blocks: [
+              { type: "p", html: "BRAVEICO verkauft keine personenbezogenen Daten an Dritte und gibt keine Daten zu kommerziellen Werbezwecken an Dritte weiter." },
+              { type: "p", html: "Nur wenn dies technisch für das Funktionieren einer bestimmten App-Funktion erforderlich ist oder BRAVEICO hierzu gesetzlich verpflichtet ist, können Daten durch einen technischen Dienstleister oder aufgrund einer gesetzlichen Verpflichtung verarbeitet werden." }
+            ]
+          },
+          {
+            title: "10. Hosting und Protokolldaten",
+            blocks: [
+              { type: "p", html: "Wenn du die Webversion nutzt, kann der Hosting-Anbieter oder Webserver technische Protokolldaten verarbeiten, wie IP-Adresse, Datum und Uhrzeit des Besuchs, Browsertyp und aufgerufene Seiten. Solche Daten sind üblich für Sicherheit, Stabilität und die technische Verwaltung einer Website." }
+            ]
+          },
+          {
+            title: "11. Cookies und vergleichbare Techniken",
+            blocks: [
+              { type: "p", html: "Die App kann funktionale Speichertechniken verwenden, wie Browserspeicher oder vergleichbare lokale Speicherung, um eingegebene Daten, Präferenzen und die Funktionsweise der App zu speichern. Dieser Speicher dient dazu, die App technisch funktionsfähig und benutzerfreundlich zu halten." }
+            ]
+          },
+          {
+            title: "12. Speicherfristen",
+            blocks: [
+              { type: "p", html: "Daten, die lokal auf deinem Gerät oder in deinem Browser gespeichert werden, bleiben erhalten, bis du sie löschst, überschreibst oder die App- oder Browserdaten entfernst." },
+              { type: "p", html: "Wenn eine optionale Serverfunktion verwendet wird, werden Daten nicht länger gespeichert, als für den technischen Zweck dieser Funktion erforderlich ist, es sei denn, eine längere Aufbewahrungsfrist ist gesetzlich vorgeschrieben." }
+            ]
+          },
+          {
+            title: "13. Demoprofile und Testdaten",
+            blocks: [
+              { type: "p", html: "Die App kann Demoprofile oder Beispieldaten enthalten, um ihre Funktionsweise zu demonstrieren. Wenn du ein solches Demoprofil lädst, können bestehende lokale Eingaben überschrieben oder ersetzt werden. Prüfe deshalb immer, ob du mit deinen eigenen aktuellen Daten arbeitest, bevor du Schlüsse ziehst oder einen Bericht erstellst." }
+            ]
+          },
+          {
+            title: "14. Sicherheit",
+            blocks: [
+              { type: "p", html: "BRAVEICO trifft angemessene technische und organisatorische Maßnahmen, um App, Website und Datenverarbeitung sorgfältig zu gestalten. Gleichzeitig kann keine digitale Umgebung absolute Sicherheit garantieren." }
+            ]
+          },
+          {
+            title: "15. Deine Rechte",
+            blocks: [
+              { type: "p", html: "Wenn BRAVEICO personenbezogene Daten von dir verarbeitet, kannst du - soweit gesetzlich anwendbar - Folgendes verlangen:" },
+              { type: "ul", items: [
+                "Auskunft über deine personenbezogenen Daten;",
+                "Berichtigung unrichtiger personenbezogener Daten;",
+                "Löschung personenbezogener Daten;",
+                "Einschränkung der Verarbeitung;",
+                "Widerspruch gegen die Verarbeitung;",
+                "Übertragbarkeit personenbezogener Daten."
+              ]},
+              { type: "p", html: "Da diese Version der App weitgehend lokal arbeitet, kannst du viele Daten auch selbst löschen, indem du die lokalen App- oder Browserdaten entfernst." }
+            ]
+          },
+          {
+            title: "16. Daten löschen",
+            blocks: [
+              { type: "p", html: "Du kannst lokal gespeicherte Daten unter anderem löschen, indem du:" },
+              { type: "ul", items: [
+                "die App-Daten auf dem Gerät löschst;",
+                "die App entfernst;",
+                "Browserdaten oder lokalen Speicher bei Nutzung der Webversion löschst;",
+                "etwaige Test- oder Demodaten mit neuen Eingaben überschreibst."
+              ]}
+            ]
+          },
+          {
+            title: "17. Fragen oder Beschwerden",
+            blocks: [
+              { type: "p", html: "Wenn du Fragen zum Datenschutz oder zu dieser Erklärung hast, nimm bitte Kontakt auf über <a href='mailto:info@braveico.nl'>info@braveico.nl</a>." },
+              { type: "p", html: "Außerdem hast du das Recht, eine Beschwerde bei der Autoriteit Persoonsgegevens einzureichen, wenn du der Ansicht bist, dass personenbezogene Daten falsch oder unsorgfältig verarbeitet werden." }
+            ]
+          },
+          {
+            title: "18. Änderungen dieser Datenschutzerklärung",
+            blocks: [
+              { type: "p", html: "BRAVEICO kann diese Datenschutzerklärung anpassen, wenn sich die App, die Website oder die Datenverarbeitung ändert. Die aktuellste Version wird auf der dafür vorgesehenen Seite veröffentlicht." }
+            ]
+          },
+          {
+            title: "19. Wichtiger Hinweis",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp ist ein Hilfsmittel für Vorbereitung und Selbstständigkeit. Die Inhalte der App, Analysen und Berichte basieren auf eingegebenen Daten und modellbasierter Logik. Diese Datenschutzerklärung betrifft nur die Verarbeitung von Daten, nicht die inhaltliche Richtigkeit oder Eignung von Empfehlungen in einer bestimmten Notsituation." }
+            ]
+          }
+        ]
+      },
+      fr: {
+        htmlLang: "fr",
+        title: "Déclaration de confidentialité - BRAVEICO PrepApp",
+        updated: "Dernière mise à jour : 22 avril 2026",
+        switcherLabel: "Langue :",
+        intro: [
+          "BRAVEICO PrepApp est une application de BRAVEICO. Cette déclaration de confidentialité explique quelles données peuvent être traitées lors de l'utilisation de l'application et de la version web, pourquoi cela se produit et quels sont tes droits à cet égard."
+        ],
+        sections: [
+          {
+            title: "1. Qui est responsable ?",
+            blocks: [
+              { type: "p", html: "Le responsable du traitement des données à caractère personnel dans le cadre de BRAVEICO PrepApp est :" },
+              { type: "p", html: "BRAVEICO<br>E-mail : <a href='mailto:info@braveico.nl'>info@braveico.nl</a><br>Site web : <a href='https://www.braveico.nl' target='_blank' rel='noreferrer'>www.braveico.nl</a>" }
+            ]
+          },
+          {
+            title: "2. À quoi sert l'application ?",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp aide les utilisateurs à se préparer de manière pratique aux pannes, perturbations et situations de crise, telles que panne d'électricité, coupure d'eau, panne de communication, évacuation et autres situations dans lesquelles l'autonomie à domicile ou autour du foyer est importante." }
+            ]
+          },
+          {
+            title: "3. Quelles données peuvent être traitées ?",
+            blocks: [
+              { type: "p", html: "Selon la manière dont tu utilises l'application, celle-ci peut fonctionner avec des données telles que :" },
+              { type: "ul", items: [
+                "des données relatives au foyer, comme la composition du ménage et la situation de logement ;",
+                "des données d'inventaire, comme les moyens disponibles et les quantités saisies ;",
+                "les périodes de préparation, scénarios et préférences choisis ;",
+                "des données de rapport établies sur la base de tes saisies ;",
+                "des données techniques nécessaires au fonctionnement du site web ou de l'application."
+              ]},
+              { type: "p", html: "BRAVEICO conseille de ne pas saisir de données personnelles inutiles ou excessivement sensibles dans les champs de texte libre." }
+            ]
+          },
+          {
+            title: "4. Comment les données sont-elles stockées ?",
+            blocks: [
+              { type: "p", html: "Dans la variante locale actuelle de BRAVEICO PrepApp, les données saisies sont en principe stockées localement sur l'appareil de l'utilisateur ou dans son navigateur. Cela signifie que les données restent normalement liées au même navigateur, au même appareil ou à la même installation de l'application." },
+              { type: "p", html: "Si tu changes de navigateur, d'appareil, de fenêtre privée ou d'installation de l'application, les données ne sont généralement pas reprises automatiquement, sauf si tu les exportes ou les enregistres toi-même." }
+            ]
+          },
+          {
+            title: "5. L'application utilise-t-elle un compte ou une base de données centrale d'utilisateurs ?",
+            blocks: [
+              { type: "p", html: "Dans cette version de BRAVEICO PrepApp, aucune base de données centrale d'utilisateurs n'est utilisée pour stocker tes données de foyer et d'inventaire. Dans cette variante, l'application fonctionne principalement avec un stockage local." }
+            ]
+          },
+          {
+            title: "6. L'application utilise-t-elle des services d'IA externes ?",
+            blocks: [
+              { type: "p", html: "Dans la variante locale actuelle de BRAVEICO PrepApp, aucun service d'IA externe n'est utilisé pour traiter les données des utilisateurs. Dans cette variante, aucun backend IA central n'est actif pour les saisies personnelles." }
+            ]
+          },
+          {
+            title: "7. Dans quels cas les données peuvent-elles quand même être traitées via un serveur ?",
+            blocks: [
+              { type: "p", html: "Certaines fonctions techniques peuvent - si elles sont activées - utiliser un serveur ou une connexion réseau. Cela peut par exemple être le cas pour l'export PDF ou une autre fonction technique d'assistance." },
+              { type: "p", html: "Si une telle fonction est active, les données nécessaires à cette fonction spécifique peuvent être traitées temporairement d'un point de vue technique afin de produire le résultat demandé, comme un rapport ou un fichier PDF. Cela n'a lieu que dans la mesure nécessaire à cette fonction." }
+            ]
+          },
+          {
+            title: "8. Finalités et bases juridiques du traitement",
+            blocks: [
+              { type: "p", html: "BRAVEICO ne traite les données que dans la mesure nécessaire, notamment pour :" },
+              { type: "ul", items: [
+                "faire fonctionner l'application et le site web ;",
+                "conserver les saisies et préférences locales ;",
+                "générer des analyses, aperçus et rapports sur la base de tes saisies ;",
+                "exécuter des fonctions techniques optionnelles, comme l'export PDF ;",
+                "sécuriser, améliorer et gérer l'application ou le site web."
+              ]},
+              { type: "p", html: "Les bases juridiques possibles sont notamment :" },
+              { type: "ul", items: [
+                "ta demande d'utiliser une fonction ;",
+                "l'intérêt légitime de BRAVEICO à faire fonctionner l'application de manière technique et sécurisée ;",
+                "le respect d'une obligation légale, lorsqu'elle s'applique."
+              ]}
+            ]
+          },
+          {
+            title: "9. Partage avec des tiers",
+            blocks: [
+              { type: "p", html: "BRAVEICO ne vend pas de données personnelles à des tiers et ne fournit pas de données à des tiers à des fins publicitaires commerciales." },
+              { type: "p", html: "Ce n'est que si cela est techniquement nécessaire au fonctionnement d'une fonction spécifique de l'application, ou si BRAVEICO y est légalement tenu, que des données peuvent être traitées par un prestataire technique ou en vertu d'une obligation légale." }
+            ]
+          },
+          {
+            title: "10. Hébergement et journaux techniques",
+            blocks: [
+              { type: "p", html: "Si tu utilises la version web, l'hébergeur ou le serveur web peut traiter des données techniques de journalisation telles que l'adresse IP, la date et l'heure de la visite, le type de navigateur et les pages consultées. Ces données sont courantes pour la sécurité, la stabilité et la gestion technique d'un site web." }
+            ]
+          },
+          {
+            title: "11. Cookies et techniques comparables",
+            blocks: [
+              { type: "p", html: "L'application peut utiliser des techniques de stockage fonctionnel, telles que le stockage du navigateur ou un stockage local comparable, afin de conserver les données saisies, les préférences et le fonctionnement de l'application. Ce stockage vise à faire fonctionner l'application sur le plan technique et à la rendre conviviale." }
+            ]
+          },
+          {
+            title: "12. Durées de conservation",
+            blocks: [
+              { type: "p", html: "Les données stockées localement sur ton appareil ou dans ton navigateur restent conservées jusqu'à ce que tu les supprimes, les écrases ou effaces les données de l'application ou du navigateur." },
+              { type: "p", html: "Si une fonction serveur optionnelle est utilisée, les données ne sont pas conservées plus longtemps que nécessaire pour l'objectif technique de cette fonction, sauf si une durée de conservation plus longue est légalement requise." }
+            ]
+          },
+          {
+            title: "13. Profils de démonstration et données de test",
+            blocks: [
+              { type: "p", html: "L'application peut contenir des profils de démonstration ou des données d'exemple pour montrer son fonctionnement. Si tu charges un tel profil de démonstration, des saisies locales existantes peuvent être écrasées ou remplacées. Vérifie donc toujours que tu travailles avec tes propres données actuelles avant de tirer des conclusions ou de générer un rapport." }
+            ]
+          },
+          {
+            title: "14. Sécurité",
+            blocks: [
+              { type: "p", html: "BRAVEICO prend des mesures techniques et organisationnelles raisonnables afin de concevoir l'application, le site web et le traitement des données avec soin. En même temps, aucun environnement numérique ne peut garantir une sécurité absolue." }
+            ]
+          },
+          {
+            title: "15. Tes droits",
+            blocks: [
+              { type: "p", html: "Si BRAVEICO traite des données personnelles te concernant, tu peux - dans la mesure prévue par la loi - demander :" },
+              { type: "ul", items: [
+                "l'accès à tes données personnelles ;",
+                "la rectification de données personnelles inexactes ;",
+                "l'effacement de données personnelles ;",
+                "la limitation du traitement ;",
+                "de t'opposer au traitement ;",
+                "la portabilité des données personnelles."
+              ]},
+              { type: "p", html: "Comme cette version de l'application fonctionne en grande partie localement, tu peux aussi supprimer toi-même une grande partie des données en effaçant les données locales de l'application ou du navigateur." }
+            ]
+          },
+          {
+            title: "16. Supprimer des données",
+            blocks: [
+              { type: "p", html: "Tu peux notamment supprimer les données stockées localement en :" },
+              { type: "ul", items: [
+                "effaçant les données de l'application sur l'appareil ;",
+                "supprimant l'application ;",
+                "effaçant les données du navigateur ou le stockage local lors de l'utilisation de la version web ;",
+                "écrasant d'éventuelles données de test ou de démonstration avec de nouvelles saisies."
+              ]}
+            ]
+          },
+          {
+            title: "17. Questions ou plaintes",
+            blocks: [
+              { type: "p", html: "Si tu as des questions concernant la confidentialité ou cette déclaration, contacte <a href='mailto:info@braveico.nl'>info@braveico.nl</a>." },
+              { type: "p", html: "Tu as également le droit d'introduire une plainte auprès de l'Autoriteit Persoonsgegevens si tu estimes que des données personnelles sont traitées de manière incorrecte ou négligente." }
+            ]
+          },
+          {
+            title: "18. Modifications de cette déclaration de confidentialité",
+            blocks: [
+              { type: "p", html: "BRAVEICO peut adapter cette déclaration de confidentialité si l'application, le site web ou le traitement des données change. La version la plus récente sera publiée sur la page prévue à cet effet." }
+            ]
+          },
+          {
+            title: "19. Nuance importante",
+            blocks: [
+              { type: "p", html: "BRAVEICO PrepApp est un outil de préparation et d'autonomie. Le contenu de l'application, des analyses et des rapports repose sur des données saisies et une logique de modèle. Cette déclaration de confidentialité concerne uniquement le traitement des données, et non l'exactitude ou l'adéquation du contenu des conseils dans une situation d'urgence spécifique." }
+            ]
+          }
+        ]
+      }
+    };
+
+    const languageNames = {
+      nl: "Nederlands",
+      en: "English",
+      de: "Deutsch",
+      fr: "Français"
+    };
+
+    function getInitialLanguage() {
+      const params = new URLSearchParams(window.location.search);
+      const requested = params.get("lang");
+      if (requested && translations[requested]) {
+        return requested;
+      }
+      const browserLang = (navigator.language || "nl").toLowerCase().split("-")[0];
+      if (translations[browserLang]) {
+        return browserLang;
+      }
+      return "nl";
+    }
+
+    function renderLanguage(lang) {
+      const content = translations[lang] || translations.nl;
+      document.documentElement.lang = content.htmlLang;
+      document.title = content.title;
+
+      document.getElementById("lang-switcher-label").textContent = content.switcherLabel;
+      document.getElementById("page-title").textContent = content.title;
+      document.getElementById("page-updated").textContent = content.updated;
+      document.getElementById("page-intro").innerHTML = content.intro
+        .map((paragraph) => `<p>${paragraph}</p>`)
+        .join("");
+
+      document.getElementById("page-sections").innerHTML = content.sections
+        .map((section) => {
+          const blocks = section.blocks
+            .map((block) => {
+              if (block.type === "ul") {
+                return `<ul>${block.items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+              }
+              return `<p>${block.html}</p>`;
+            })
+            .join("");
+          return `<section class="section"><h2>${section.title}</h2>${blocks}</section>`;
+        })
+        .join("");
+
+      document.querySelectorAll("[data-lang-link]").forEach((link) => {
+        const isActive = link.getAttribute("data-lang-link") === lang;
+        link.classList.toggle("is-active", isActive);
+        if (isActive) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+        const targetLang = link.getAttribute("data-lang-link");
+        if (targetLang) {
+          link.setAttribute("href", `?lang=${targetLang}`);
+          link.setAttribute("aria-label", languageNames[targetLang]);
+        }
+      });
+    }
+
+    renderLanguage(getInitialLanguage());
+  </script>
 </body>
 </html>
